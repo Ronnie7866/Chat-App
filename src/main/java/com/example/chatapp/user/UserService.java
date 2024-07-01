@@ -1,7 +1,5 @@
-package com.example.chatapp;
+package com.example.chatapp.user;
 
-import com.example.chatapp.user.Status;
-import com.example.chatapp.user.User;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

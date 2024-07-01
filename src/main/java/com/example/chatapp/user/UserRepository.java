@@ -1,7 +1,5 @@
-package com.example.chatapp;
+package com.example.chatapp.user;
 
-import com.example.chatapp.user.Status;
-import com.example.chatapp.user.User;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.List;

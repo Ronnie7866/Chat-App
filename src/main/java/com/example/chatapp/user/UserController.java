@@ -1,8 +1,5 @@
-package com.example.chatapp.controller;
+package com.example.chatapp.user;
 
-import com.example.chatapp.UserService;
-import com.example.chatapp.user.User;
-import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.messaging.handler.annotation.MessageMapping;

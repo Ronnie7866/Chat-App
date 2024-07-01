@@ -14,12 +14,12 @@ public class ChatRoomService {
     public Optional<String> getChatRoomId(
             String senderId,
             String recipientId,
-            boolean createNewRoomNotExist
+            boolean createNewRoomIfNotExists
     ) {
         return chatRoomRepository.findBySenderIdAndRecipientId(senderId, recipientId)
                 .map(ChatRoom::getChatId)
                 .or(() -> {
-                    if (createNewRoomNotExist) {
+                    if (createNewRoomIfNotExists) {
                         var chatId = createChat(senderId, recipientId);
                         return Optional.of(chatId);
                     }
